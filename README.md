@@ -1,0 +1,50 @@
+# Socket Draft
+
+Side project to discover some js web tools like trpc, fastify, and socket.io
+
+## TODO
+
+### General
+
+- [x] Implement nextjs
+- [x] Implement fastify
+- [ ] Implement trpc
+  - [ ] Create fastify trpc router
+  - [ ] Connect to nextjs with tanstack
+    - [ ] static
+    - [ ] react
+- [ ] implement env
+- [ ] Implement socket.io
+  - [ ] Connect to nextjs
+- [ ] Implement Drizzle ORM
+- [ ] Implement shadcn
+  - [ ] Create custom components
+- [ ] Implement storyblock
+- [ ] Implement vitest
+  - [ ] ui
+  - [ ] webapp
+  - [ ] api
+- [ ] Implement playwright
+  - [ ] test login process
+- [ ] Implement translations
+  - [ ] next i18n
+  - [ ] zod frontend/backend
+
+### Features
+
+- [ ] Implement HomePage
+- [ ] Implement user
+  - [ ] User creation
+  - [ ] User authentication
+  - [ ] User authorization
+  - [ ] User reset password
+  - [ ] User settings
+  - [ ] User list
+- [ ] Implement room
+  - [ ] Implement room creation
+  - [ ] Implement room join
+  - [ ] Implement room leave
+  - [ ] Implement room settings
+  - [ ] Implement room chat
+  - [ ] Implement room draft
+  - [ ] Implement room list

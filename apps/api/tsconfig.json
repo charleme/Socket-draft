@@ -1,0 +1,16 @@
+{
+	"compilerOptions": {
+	/* Transpiling with TypeScript: */
+	"moduleResolution": "NodeNext",
+		"module": "NodeNext",
+		"rootDir": "src",
+		"outDir": "dist",
+		"sourceMap": true,
+		"lib": ["es2022"],
+		"composite": false,
+		"declarationMap": false,
+	},
+	"extends": "tsconfig/base.json",
+	"include": ["src/**/*.ts"],
+	"exclude": ["./node_modules", "dist"]
+}
