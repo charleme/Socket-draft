@@ -9,7 +9,7 @@ Side project to discover some js web tools like trpc, fastify, and socket.io
 - [x] Implement nextjs
 - [x] Implement fastify
 - [ ] Implement trpc
-  - [ ] Create fastify trpc router
+  - [x] Create fastify trpc router
   - [ ] Connect to nextjs with tanstack
     - [ ] static
     - [ ] react
