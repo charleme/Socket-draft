@@ -2,14 +2,20 @@ import fastify from "fastify";
 import { tprcRouter } from "./trpc/router.js";
 import { createTRPCContext } from "./trpc/trpc.js";
 import { fastifyTRPCPlugin } from "@trpc/server/adapters/fastify";
+import { env } from "./utils/env.js";
+import cors from "@fastify/cors";
 
 const server = fastify();
+
+await server.register(cors, {
+  // put your options here
+});
 
 server.get("/ping", async (_request, _reply) => {
   return "pong\n";
 });
 
-void server.register(fastifyTRPCPlugin, {
+await server.register(fastifyTRPCPlugin, {
   prefix: "/trpc",
   trpcOptions: {
     router: tprcRouter,
@@ -17,7 +23,7 @@ void server.register(fastifyTRPCPlugin, {
   },
 });
 
-server.listen({ port: 8080 }, (err, address) => {
+server.listen({ port: env.API_PORT }, (err, address) => {
   if (err) {
     console.error(err);
     process.exit(1);

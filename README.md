@@ -8,13 +8,15 @@ Side project to discover some js web tools like trpc, fastify, and socket.io
 
 - [x] Implement nextjs
 - [x] Implement fastify
-- [ ] Implement trpc
+- [x] Implement trpc
   - [x] Create fastify trpc router
-  - [ ] Connect to nextjs with tanstack
-    - [ ] static
-    - [ ] react
-- [ ] implement env
+  - [x] Connect to nextjs with tanstack
+    - [x] static
+    - [x] react
+- [x] implement env
+- [ ] implement redis
 - [ ] Implement socket.io
+  - [ ] Connect to redis
   - [ ] Connect to nextjs
 - [ ] Implement Drizzle ORM
 - [ ] Implement shadcn

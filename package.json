@@ -9,13 +9,14 @@
     "packages/*"
   ],
   "scripts": {
-    "build": "turbo run build",
-    "dev": "turbo run dev --parallel --force",
+    "build": "NODE_ENV=production dotenv turbo run build",
+    "dev": "NODE_ENV=development dotenv turbo run dev --parallel --force",
     "lint": "turbo run lint",
     "format": "prettier --write \"**/*.{ts,tsx,md}\"",
-    "start": "turbo run start"
+    "start": "NODE_ENV=production dotenv turbo run start"
   },
   "devDependencies": {
+    "dotenv-cli": "^7.4.1",
     "prettier": "^3.2.5",
     "turbo": "^1.13.0"
   },

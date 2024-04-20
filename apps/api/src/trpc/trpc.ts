@@ -9,7 +9,7 @@
 import { initTRPC } from "@trpc/server";
 import superjson from "superjson";
 import { ZodError } from "zod";
-import {CreateFastifyContextOptions} from "@trpc/server/adapters/fastify";
+import { CreateFastifyContextOptions } from "@trpc/server/adapters/fastify";
 
 /**
  * 1. CONTEXT
@@ -23,10 +23,13 @@ import {CreateFastifyContextOptions} from "@trpc/server/adapters/fastify";
  *
  * @see https://trpc.io/docs/server/context
  */
-export const createTRPCContext = ({ req, res }: CreateFastifyContextOptions) => {
+export const createTRPCContext = ({
+  req,
+  res,
+}: CreateFastifyContextOptions) => {
   return {
     req,
-    res
+    res,
   };
 };
 
