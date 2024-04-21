@@ -19,11 +19,9 @@ Side project to discover some js web tools like trpc, fastify, and socket.io
   - [ ] Connect to redis
   - [ ] Connect to nextjs
 - [ ] Implement Drizzle ORM
-- [ ] Implement shadcn
-  - [ ] Create custom components
-- [ ] Implement storyblock
+  - [ ] Create a CRUD
+- [x] Implement shadcn
 - [ ] Implement vitest
-  - [ ] ui
   - [ ] webapp
   - [ ] api
 - [ ] Implement playwright
