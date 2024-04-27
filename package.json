@@ -24,7 +24,7 @@
   "devDependencies": {
     "dotenv-cli": "^7.4.1",
     "prettier": "^3.2.5",
-    "turbo": "^1.13.0"
+    "turbo": "^1.13.3"
   },
   "engines": {
     "node": ">=20"
