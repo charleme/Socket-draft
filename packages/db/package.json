@@ -1,0 +1,36 @@
+{
+  "name": "db",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/index.ts",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\"",
+    "lint": "eslint src --ext .ts",
+    "generate": "drizzle-kit generate:pg",
+    "migrate": "tsx ./src/migrate.ts",
+    "push": "drizzle-kit push:pg",
+    "studio": "drizzle-kit studio",
+    "check": "drizzle-kit check:pg",
+    "seed": "tsx ./src/seed.ts",
+    "dev": "pnpm studio"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/better-sqlite3": "^7.6.10",
+    "@types/node": "^20",
+    "drizzle-kit": "^0.20.17",
+    "eslint": "^8",
+    "tsconfig": "workspace:*",
+    "@faker-js/faker": "^8.4.1",
+    "tsx": "^4.7.2"
+  },
+  "dependencies": {
+    "drizzle-orm": "^0.30.9",
+    "pg": "^8.11.5",
+    "postgres": "^3.4.4",
+    "zod": "^3.22.4"
+  }
+}

@@ -13,7 +13,13 @@
     "dev": "NODE_ENV=development dotenv turbo run dev --parallel --force",
     "lint": "turbo run lint",
     "format": "prettier --write \"**/*.{ts,tsx,md}\"",
-    "start": "NODE_ENV=production dotenv turbo run start"
+    "start": "NODE_ENV=production dotenv turbo run start",
+    "db:generate": "dotenv -- pnpm --filter db generate",
+    "db:migrate": "dotenv -- pnpm --filter db migrate",
+    "db:push": "dotenv -- pnpm --filter db push",
+    "db:studio": "dotenv -- pnpm --filter db studio",
+    "db:seed": "dotenv -- pnpm --filter db seed",
+    "db:check": "dotenv -- pnpm --filter db check"
   },
   "devDependencies": {
     "dotenv-cli": "^7.4.1",
