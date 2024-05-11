@@ -14,6 +14,11 @@ Side project to discover some js web tools like trpc, fastify, and socket.io
     - [x] static
     - [x] react
 - [x] implement env
+- [ ] implement CI
+  - [ ] tester le build
+  - [ ] tester lint
+  - [ ] tester format
+  - [ ] vérifier qu'il n'y a pas de migration
 - [ ] implement redis
 - [ ] Implement socket.io
   - [ ] Connect to redis
