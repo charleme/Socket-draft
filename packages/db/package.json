@@ -20,7 +20,6 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "@types/better-sqlite3": "^7.6.10",
     "@types/node": "^20",
     "drizzle-kit": "^0.20.17",
     "eslint": "^8",

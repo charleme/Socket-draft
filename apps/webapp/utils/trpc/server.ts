@@ -1,12 +1,13 @@
 import { createTRPCProxyClient, httpBatchLink } from "@trpc/client";
 import type { TrpcRouter } from "api";
 import SuperJSON from "superjson";
+import { env } from "@/utils/env";
 
 export const api = createTRPCProxyClient<TrpcRouter>({
   transformer: SuperJSON,
   links: [
     httpBatchLink({
-      url: "http://localhost:3000/api" + "/trpc",
+      url: `${env.NEXT_PUBLIC_API_URL}/trpc`,
       fetch: (input, init) => fetch(input, { ...init, cache: "no-store" }),
       // You can pass any HTTP headers you wish here
       async headers() {

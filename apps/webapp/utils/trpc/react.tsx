@@ -33,7 +33,7 @@ export function TRPCReactProvider(props: { children: React.ReactNode }) {
       links: [
         loggerLink({
           enabled: (op) =>
-            env.NODE_ENV === "development" ||
+            process.env.NODE_ENV === "development" ||
             (op.direction === "down" && op.result instanceof Error),
         }),
         httpBatchLink({
@@ -61,5 +61,5 @@ export function TRPCReactProvider(props: { children: React.ReactNode }) {
 }
 
 const getBaseUrl = () => {
-  return "http://localhost:3000/api";
+  return `${env.NEXT_PUBLIC_API_URL}`;
 };

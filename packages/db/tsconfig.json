@@ -4,7 +4,6 @@
     "sourceMap": true,
     "lib": ["es2022"],
     "noEmit": true,
-    "types": ["better-sqlite3"],
     "allowImportingTsExtensions": true
   },
   "extends": "tsconfig/base.json"
